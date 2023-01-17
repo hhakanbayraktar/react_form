@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Information({form}) {
   return (
@@ -8,6 +9,7 @@ function Information({form}) {
         <p>Birthday: {form.birthday}</p>
         <p>Color: {form.color}</p>
         <p>Address: {form.address}</p>
+        <Link to="/"><button>Back</button></Link>
     </div>
   )
 }
